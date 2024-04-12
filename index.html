@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Transaction Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Transaction Tracker</h1>
+        <form id="transaction-form">
+            <div class="form-control">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Enter description">
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="form-control">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="Groceries">Groceries</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utilities">Utilities</option>
+                    <!-- Add more categories as needed -->
+                </select>
+            </div>
+            <button type="submit">Add Transaction</button>
+        </form>
+        <h3>Transactions</h3>
+        <div id="transaction-list" class="list">
+            <!-- Transaction items will be added dynamically here -->
+        </div>
+        <h3>Transaction Summary</h3>
+        <canvas id="transaction-chart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
